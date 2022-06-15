@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  
+}
+h3{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  margin: 0;
+  font-size: 46px;
+  color: #ffffff;
+}
+
+p{
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: .8px;
+  line-height: 1.8;
+}
+
+.img-bg{
+  position: relative;
+  height: 100vh;
+}
+.main-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 80px;
+}
+.main-content.main{
+  display: block;
+}
+
+.main-content.utility{
+  display: flex;
+  align-items: center;
+}
+
+.main-content.utility p:last-child{
+  margin-bottom: 0;
+}
+
+.utility-content{
+  padding-right: 70px;
+}
+.utility-char{
+  max-width: 450px;
+}
+
+.utility-sec{
+  min-width: 40%;
+  text-align: center;
+}
+
+.utility-icons img{
+  margin: 0 5px;
+}
+
+.logo-img{
+  max-width: 6rem;
+  margin: 30px 20px 0;
+}
+.header{
+  /* text-align: center; */
+}
+.main-area{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+
+
+.main-content.team{
+  flex-direction: column;
+}
+
+.main-content.team img{
+  max-width: 100%;
+}
+
+.mint-btn {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #a7891c 0, #caa615 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #0e0e0e;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  min-width: 680px;
+  height: 95px;
+  font-size: 65px;
+  margin-top: 165px;
+}
+
+.mint-btn:focus {
+  box-shadow: #72591f  0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #72591f  0 -3px 0 inset;
+}
+
+.mint-btn:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #72591f  0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.mint-btn:active {
+  box-shadow: #72591f  0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.text-box{
+  padding: 45px;
+  /* background: #1b50e9; */
+  background-image: radial-gradient(100% 100% at 100% 0, #061858 0, #1b50e9 100%);
+  text-align: center;
+}
+
+.text-box.roadmap{
+  padding: 45px;
+  /* background: #1b50e9; */
+  background-image: radial-gradient(100% 100% at 100% 0, #281315 0, #976c59 100%);
+  text-align: center;
+}
+
+
+.text-box.footer{
+  padding: 20px;
+  background: #061858;
+  text-align: center;
+  font-size: 13px;
+}
+
+.text-box.footer p{
+  font-size: 13px;
+  font-weight: 300;
+  color: #1750df;
+}
+ 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  width: 230px;
+  height: 230px;
+  border-radius: 13px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  perspective: 1000px;
+  height: 100%;
+  overflow: hidden;
+  
+}
+
+.flip-card h4{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 24px;
+  margin: 0;
+}
+.flip-card p{
+  font-size: 16px;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100.1%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 13px;
+}
+
+
+
+.flip-card-back {
+  background-color: #1b50e9;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1367px) {
+  .main-area.hero-bear{
+    background-position: center center;
+  }
+}
+
+@media only screen and (max-width: 1292px) {
+  .react-parallax-bgimage {
+    height: 100vh !important;
+  }
+  .img-bg, .main-content{
+    height: 575px;
+  }
+  .main-area{
+    height: 506px;
+    background-size: 78%;
+  }
+  .main-area.hero-bear{
+    background-position: center bottom;
+  }
+  .grid-item {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+  }
+  h3{
+    font-size: 36px;
+  }
+  p{
+    font-size: 18px;
+  }
+  .utility-char {
+    max-width: 80%;
+  }
+  .utility-icons img {
+    max-width: 100px;
+  }
+  .react-parallax-bgimage{
+    width: auto !important;
+  }
+  .logo-img {
+    max-width: 4rem;
+    margin: 20px 20px 0;
+  }
+  .main-content{
+    padding-bottom: 0;
+  }
+  .utility-content {
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .main-area{
+    background-size: 88%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .main-area {
+    background-size: 100%;
+  }
+  .grid-item{
+    width: 160px;
+    height: 160px;
+  }
+  h3{
+    font-size: 28px;
+  }
+  p{
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 896px) {
+  .main-area.hero-bear {
+    background-position: 100px bottom;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 778px) {
+  .main-area.hero-bear {
+    background-position: 225px bottom;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mint-btn{
+    min-width: unset;
+    font-size: 40px;
+    padding: 0 45px;
+  }
+  .grid-item{
+    width: 140px;
+    height: 140px;
+  }
+  .utility-icons img {
+    max-width: 74px;
+  }
+}
+
+@media only screen and (max-width: 492px) {
+  .header {
+    text-align: center;
+  }
+  .logo-img {
+    max-width: 5rem;
+  }
+  .main-area.hero-bear{
+    background-position: -60px 15px;
+    background-size: cover;
+  }
+  .mint-btn{
+    width: 80%;
+    font-size: 34px;
+    min-width: unset;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .grid-item{
+    width: 110px;
+    height: 110px;
+    padding: 5px;
+  }
+  .grid-container{
+    grid-template-columns: auto auto auto;
+  }
+  .flip-card h4 {
+    font-size: 16px;
+  }
+  .flip-card p {
+    font-size: 10px;
+  }
+  .flip-card-front, .flip-card-back{
+    border-radius: 8px;
+  }
+  .main-content.utility {
+    flex-direction: column;
+  }
+  .utility-char {
+    max-width: 30%;
+  }
+  .utility-content{
+    text-align: center;
+    padding: 0 20px;
+  }
+  .utility-icons img {
+    max-width: 60px;
+  }
+  .roadmap-img .react-parallax-bgimage{
+    display: none;
+  }
+  .roadmap-img {
+    background: url(../src/img/img-3res.jpg) no-repeat center center;
+    background-size: cover;
+  }
+/*
+  .roadmap-img, .roadmap-img .main-content{
+    height: 575px;
+  }
+  .roadmap-img .react-parallax-bgimage{
+    width: auto !important;
+    height: 100vh !important;
+  } */
+
+}
+
+@media only screen and (max-width: 360px) {
+  h3{
+    font-size: 22px;
+  }
+  .text-box, .text-box.roadmap {
+    padding: 26px;
+  }
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+  .mint-btn {
+    height: 75px;
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  h3{
+    font-size: 18px;
+  }
+  p{
+    font-size: 12px;
+  }
+  .mint-btn {
+    font-size: 22px;
+    height: 65px;
+  }
+}
